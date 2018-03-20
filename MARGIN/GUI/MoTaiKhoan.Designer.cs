@@ -41,22 +41,22 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
+            this.txtSoTKLK = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtSoCMND = new System.Windows.Forms.TextBox();
+            this.txtNoiCap = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtHanMucVay = new System.Windows.Forms.TextBox();
+            this.dateNgayCap = new System.Windows.Forms.DateTimePicker();
+            this.datengaySinh = new System.Windows.Forms.DateTimePicker();
+            this.dateNgayMoTK = new System.Windows.Forms.DateTimePicker();
+            this.btnMoTK = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
+            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.cmbMaRo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -88,7 +88,6 @@
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Giới tính";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -190,145 +189,155 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "Số CMND";
             // 
-            // textBox1
+            // txtSoTKLK
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtSoTKLK.Location = new System.Drawing.Point(133, 18);
+            this.txtSoTKLK.Name = "txtSoTKLK";
+            this.txtSoTKLK.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTKLK.TabIndex = 13;
             // 
-            // textBox3
+            // txtHoTen
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 50);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 15;
+            this.txtHoTen.Location = new System.Drawing.Point(133, 50);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(130, 20);
+            this.txtHoTen.TabIndex = 15;
             // 
-            // textBox4
+            // txtDiaChi
             // 
-            this.textBox4.Location = new System.Drawing.Point(133, 159);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 20);
-            this.textBox4.TabIndex = 16;
+            this.txtDiaChi.Location = new System.Drawing.Point(133, 159);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(130, 20);
+            this.txtDiaChi.TabIndex = 16;
             // 
-            // textBox5
+            // txtSoCMND
             // 
-            this.textBox5.Location = new System.Drawing.Point(425, 84);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 20);
-            this.textBox5.TabIndex = 17;
+            this.txtSoCMND.Location = new System.Drawing.Point(425, 84);
+            this.txtSoCMND.Name = "txtSoCMND";
+            this.txtSoCMND.Size = new System.Drawing.Size(127, 20);
+            this.txtSoCMND.TabIndex = 17;
             // 
-            // textBox7
+            // txtNoiCap
             // 
-            this.textBox7.Location = new System.Drawing.Point(425, 121);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(127, 20);
-            this.textBox7.TabIndex = 19;
+            this.txtNoiCap.Location = new System.Drawing.Point(425, 121);
+            this.txtNoiCap.Name = "txtNoiCap";
+            this.txtNoiCap.Size = new System.Drawing.Size(127, 20);
+            this.txtNoiCap.TabIndex = 19;
             // 
-            // textBox8
+            // txtSDT
             // 
-            this.textBox8.Location = new System.Drawing.Point(133, 195);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(130, 20);
-            this.textBox8.TabIndex = 20;
+            this.txtSDT.Location = new System.Drawing.Point(133, 195);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(130, 20);
+            this.txtSDT.TabIndex = 20;
             // 
-            // textBox9
+            // txtEmail
             // 
-            this.textBox9.Location = new System.Drawing.Point(133, 226);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(130, 20);
-            this.textBox9.TabIndex = 21;
+            this.txtEmail.Location = new System.Drawing.Point(425, 159);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(127, 20);
+            this.txtEmail.TabIndex = 22;
             // 
-            // textBox10
+            // txtHanMucVay
             // 
-            this.textBox10.Location = new System.Drawing.Point(425, 159);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(127, 20);
-            this.textBox10.TabIndex = 22;
+            this.txtHanMucVay.Location = new System.Drawing.Point(425, 198);
+            this.txtHanMucVay.Name = "txtHanMucVay";
+            this.txtHanMucVay.Size = new System.Drawing.Size(127, 20);
+            this.txtHanMucVay.TabIndex = 23;
             // 
-            // textBox11
+            // dateNgayCap
             // 
-            this.textBox11.Location = new System.Drawing.Point(425, 198);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(127, 20);
-            this.textBox11.TabIndex = 23;
+            this.dateNgayCap.Location = new System.Drawing.Point(133, 118);
+            this.dateNgayCap.Name = "dateNgayCap";
+            this.dateNgayCap.Size = new System.Drawing.Size(130, 20);
+            this.dateNgayCap.TabIndex = 26;
+            this.dateNgayCap.Value = new System.DateTime(2011, 1, 26, 0, 0, 0, 0);
             // 
-            // textBox13
+            // datengaySinh
             // 
-            this.textBox13.Location = new System.Drawing.Point(133, 84);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 20);
-            this.textBox13.TabIndex = 25;
+            this.datengaySinh.Location = new System.Drawing.Point(425, 50);
+            this.datengaySinh.Name = "datengaySinh";
+            this.datengaySinh.Size = new System.Drawing.Size(130, 20);
+            this.datengaySinh.TabIndex = 27;
+            this.datengaySinh.Value = new System.DateTime(1993, 6, 23, 0, 0, 0, 0);
             // 
-            // dateTimePicker1
+            // dateNgayMoTK
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(133, 118);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(130, 20);
-            this.dateTimePicker1.TabIndex = 26;
+            this.dateNgayMoTK.Enabled = false;
+            this.dateNgayMoTK.Location = new System.Drawing.Point(425, 18);
+            this.dateNgayMoTK.Name = "dateNgayMoTK";
+            this.dateNgayMoTK.Size = new System.Drawing.Size(130, 20);
+            this.dateNgayMoTK.TabIndex = 28;
             // 
-            // dateTimePicker2
+            // btnMoTK
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(425, 50);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(130, 20);
-            this.dateTimePicker2.TabIndex = 27;
+            this.btnMoTK.Location = new System.Drawing.Point(85, 275);
+            this.btnMoTK.Name = "btnMoTK";
+            this.btnMoTK.Size = new System.Drawing.Size(75, 23);
+            this.btnMoTK.TabIndex = 29;
+            this.btnMoTK.Text = "Mở TK";
+            this.btnMoTK.UseVisualStyleBackColor = true;
+            this.btnMoTK.Click += new System.EventHandler(this.btnMoTK_Click);
             // 
-            // dateTimePicker3
+            // btnThoat
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(425, 18);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(130, 20);
-            this.dateTimePicker3.TabIndex = 28;
+            this.btnThoat.Location = new System.Drawing.Point(203, 275);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 30;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button1
+            // lblError
             // 
-            this.button1.Location = new System.Drawing.Point(85, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Mở TK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(328, 280);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(192, 13);
+            this.lblError.TabIndex = 31;
+            this.lblError.Text = "Các dòng màu đỏ là thông tin bắt buộc";
             // 
-            // button2
+            // cmbGioiTinh
             // 
-            this.button2.Location = new System.Drawing.Point(203, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmbGioiTinh.FormattingEnabled = true;
+            this.cmbGioiTinh.Items.AddRange(new object[] {
+            "Nam ",
+            "Nữ"});
+            this.cmbGioiTinh.Location = new System.Drawing.Point(133, 84);
+            this.cmbGioiTinh.Name = "cmbGioiTinh";
+            this.cmbGioiTinh.Size = new System.Drawing.Size(130, 21);
+            this.cmbGioiTinh.TabIndex = 32;
             // 
-            // label14
+            // cmbMaRo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(360, 275);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(192, 13);
-            this.label14.TabIndex = 31;
-            this.label14.Text = "Các dòng màu đỏ là thông tin bắt buộc";
+            this.cmbMaRo.FormattingEnabled = true;
+            this.cmbMaRo.Location = new System.Drawing.Point(133, 226);
+            this.cmbMaRo.Name = "cmbMaRo";
+            this.cmbMaRo.Size = new System.Drawing.Size(130, 21);
+            this.cmbMaRo.TabIndex = 33;
             // 
             // MoTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 310);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbMaRo);
+            this.Controls.Add(this.cmbGioiTinh);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnMoTK);
+            this.Controls.Add(this.dateNgayMoTK);
+            this.Controls.Add(this.datengaySinh);
+            this.Controls.Add(this.dateNgayCap);
+            this.Controls.Add(this.txtHanMucVay);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtNoiCap);
+            this.Controls.Add(this.txtSoCMND);
+            this.Controls.Add(this.txtDiaChi);
+            this.Controls.Add(this.txtHoTen);
+            this.Controls.Add(this.txtSoTKLK);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -344,6 +353,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MoTaiKhoan";
             this.Text = "Mở tài khoản";
+            this.Load += new System.EventHandler(this.MoTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,21 +374,21 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtSoTKLK;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.TextBox txtSoCMND;
+        private System.Windows.Forms.TextBox txtNoiCap;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtHanMucVay;
+        private System.Windows.Forms.DateTimePicker dateNgayCap;
+        private System.Windows.Forms.DateTimePicker datengaySinh;
+        private System.Windows.Forms.DateTimePicker dateNgayMoTK;
+        private System.Windows.Forms.Button btnMoTK;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.ComboBox cmbGioiTinh;
+        private System.Windows.Forms.ComboBox cmbMaRo;
     }
 }

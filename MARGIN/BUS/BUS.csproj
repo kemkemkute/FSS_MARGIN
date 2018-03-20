@@ -102,10 +102,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Check.asmx" />
+    <Content Include="QLTienMatBUS.asmx" />
+    <Content Include="QLyKHBUS.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Check.asmx.cs">
+      <DependentUpon>Check.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTienMatBUS.asmx.cs">
+      <DependentUpon>QLTienMatBUS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QLyKHBUS.asmx.cs">
+      <DependentUpon>QLyKHBUS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

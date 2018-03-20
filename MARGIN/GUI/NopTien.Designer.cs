@@ -28,54 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtSoTienNop = new System.Windows.Forms.TextBox();
+            this.txtSoCMND = new System.Windows.Forms.TextBox();
+            this.txtSoTKLK = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNop = new System.Windows.Forms.Button();
+            this.btbThoat = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox4
+            // txtHoTen
             // 
-            this.textBox4.Location = new System.Drawing.Point(418, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 20);
-            this.textBox4.TabIndex = 54;
+            this.txtHoTen.Location = new System.Drawing.Point(418, 33);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(127, 20);
+            this.txtHoTen.TabIndex = 54;
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Location = new System.Drawing.Point(418, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 20);
-            this.textBox2.TabIndex = 53;
+            this.txtSDT.Location = new System.Drawing.Point(418, 67);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(127, 20);
+            this.txtSDT.TabIndex = 53;
             // 
-            // textBox13
+            // txtSoTienNop
             // 
-            this.textBox13.Location = new System.Drawing.Point(126, 99);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 20);
-            this.textBox13.TabIndex = 52;
+            this.txtSoTienNop.Location = new System.Drawing.Point(126, 99);
+            this.txtSoTienNop.Name = "txtSoTienNop";
+            this.txtSoTienNop.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTienNop.TabIndex = 52;
             // 
-            // textBox3
+            // txtSoCMND
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 50;
+            this.txtSoCMND.Location = new System.Drawing.Point(126, 67);
+            this.txtSoCMND.Name = "txtSoCMND";
+            this.txtSoCMND.Size = new System.Drawing.Size(130, 20);
+            this.txtSoCMND.TabIndex = 50;
             // 
-            // textBox1
+            // txtSoTKLK
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 49;
+            this.txtSoTKLK.Location = new System.Drawing.Point(126, 33);
+            this.txtSoTKLK.Name = "txtSoTKLK";
+            this.txtSoTKLK.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTKLK.TabIndex = 49;
             // 
             // label12
             // 
@@ -127,36 +128,47 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Số TK lưu ký";
             // 
-            // button1
+            // btnNop
             // 
-            this.button1.Location = new System.Drawing.Point(166, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "Nộp";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNop.Location = new System.Drawing.Point(166, 149);
+            this.btnNop.Name = "btnNop";
+            this.btnNop.Size = new System.Drawing.Size(75, 23);
+            this.btnNop.TabIndex = 55;
+            this.btnNop.Text = "Nộp";
+            this.btnNop.UseVisualStyleBackColor = true;
+            this.btnNop.Click += new System.EventHandler(this.btnNop_Click);
             // 
-            // button2
+            // btbThoat
             // 
-            this.button2.Location = new System.Drawing.Point(333, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 56;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btbThoat.Location = new System.Drawing.Point(333, 149);
+            this.btbThoat.Name = "btbThoat";
+            this.btbThoat.Size = new System.Drawing.Size(75, 23);
+            this.btbThoat.TabIndex = 56;
+            this.btbThoat.Text = "Thoát";
+            this.btbThoat.UseVisualStyleBackColor = true;
+            this.btbThoat.Click += new System.EventHandler(this.btbThoat_Click);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(321, 102);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 57;
             // 
             // NopTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 200);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.btbThoat);
+            this.Controls.Add(this.btnNop);
+            this.Controls.Add(this.txtHoTen);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtSoTienNop);
+            this.Controls.Add(this.txtSoCMND);
+            this.Controls.Add(this.txtSoTKLK);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
@@ -172,17 +184,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtSoTienNop;
+        private System.Windows.Forms.TextBox txtSoCMND;
+        private System.Windows.Forms.TextBox txtSoTKLK;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNop;
+        private System.Windows.Forms.Button btbThoat;
+        private System.Windows.Forms.Label lblError;
     }
 }

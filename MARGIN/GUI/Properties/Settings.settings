@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GUI_QLTienMatWS_QLTienMatBUS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:50136/QLTienMatBUS.asmx</Value>
+    </Setting>
+    <Setting Name="GUI_QLyKHWS_QLyKHBUS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:50136/QLyKHBUS.asmx</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

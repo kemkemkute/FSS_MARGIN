@@ -28,74 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnRut = new System.Windows.Forms.Button();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtSOTienRutToiDa = new System.Windows.Forms.TextBox();
+            this.txtSoCMND = new System.Windows.Forms.TextBox();
+            this.txtSoTKLK = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSoTienRut = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button2
+            // btnThoat
             // 
-            this.button2.Location = new System.Drawing.Point(338, 147);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(338, 152);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 68;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button1
+            // btnRut
             // 
-            this.button1.Location = new System.Drawing.Point(171, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "Rút";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRut.Location = new System.Drawing.Point(171, 152);
+            this.btnRut.Name = "btnRut";
+            this.btnRut.Size = new System.Drawing.Size(75, 23);
+            this.btnRut.TabIndex = 67;
+            this.btnRut.Text = "Rút";
+            this.btnRut.UseVisualStyleBackColor = true;
+            this.btnRut.Click += new System.EventHandler(this.btnRut_Click);
             // 
-            // textBox4
+            // txtHoTen
             // 
-            this.textBox4.Location = new System.Drawing.Point(423, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 20);
-            this.textBox4.TabIndex = 66;
+            this.txtHoTen.Location = new System.Drawing.Point(423, 31);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(127, 20);
+            this.txtHoTen.TabIndex = 66;
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Location = new System.Drawing.Point(423, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 20);
-            this.textBox2.TabIndex = 65;
+            this.txtSDT.Location = new System.Drawing.Point(423, 65);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(127, 20);
+            this.txtSDT.TabIndex = 65;
             // 
-            // textBox13
+            // txtSOTienRutToiDa
             // 
-            this.textBox13.Location = new System.Drawing.Point(131, 97);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 20);
-            this.textBox13.TabIndex = 64;
+            this.txtSOTienRutToiDa.Location = new System.Drawing.Point(131, 97);
+            this.txtSOTienRutToiDa.Name = "txtSOTienRutToiDa";
+            this.txtSOTienRutToiDa.Size = new System.Drawing.Size(130, 20);
+            this.txtSOTienRutToiDa.TabIndex = 64;
             // 
-            // textBox3
+            // txtSoCMND
             // 
-            this.textBox3.Location = new System.Drawing.Point(131, 65);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 63;
+            this.txtSoCMND.Location = new System.Drawing.Point(131, 65);
+            this.txtSoCMND.Name = "txtSoCMND";
+            this.txtSoCMND.Size = new System.Drawing.Size(130, 20);
+            this.txtSoCMND.TabIndex = 63;
             // 
-            // textBox1
+            // txtSoTKLK
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 62;
+            this.txtSoTKLK.Location = new System.Drawing.Point(131, 31);
+            this.txtSoTKLK.Name = "txtSoTKLK";
+            this.txtSoTKLK.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTKLK.TabIndex = 62;
             // 
             // label12
             // 
@@ -147,37 +150,47 @@
             this.label1.TabIndex = 57;
             this.label1.Text = "Số TK lưu ký";
             // 
-            // textBox5
+            // txtSoTienRut
             // 
-            this.textBox5.Location = new System.Drawing.Point(420, 97);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(130, 20);
-            this.textBox5.TabIndex = 70;
+            this.txtSoTienRut.Location = new System.Drawing.Point(420, 97);
+            this.txtSoTienRut.Name = "txtSoTienRut";
+            this.txtSoTienRut.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTienRut.TabIndex = 70;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(319, 100);
+            this.label4.Location = new System.Drawing.Point(326, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 69;
             this.label4.Text = "Số tiền rút";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(326, 127);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(35, 13);
+            this.lblError.TabIndex = 71;
+            this.lblError.Text = "label5";
             // 
             // RutTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 193);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.txtSoTienRut);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnRut);
+            this.Controls.Add(this.txtHoTen);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtSOTienRutToiDa);
+            this.Controls.Add(this.txtSoCMND);
+            this.Controls.Add(this.txtSoTKLK);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
@@ -185,6 +198,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RutTien";
             this.Text = "Rút tiền";
+            this.Load += new System.EventHandler(this.RutTien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,19 +206,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnRut;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtSOTienRutToiDa;
+        private System.Windows.Forms.TextBox txtSoCMND;
+        private System.Windows.Forms.TextBox txtSoTKLK;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtSoTienRut;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblError;
     }
 }

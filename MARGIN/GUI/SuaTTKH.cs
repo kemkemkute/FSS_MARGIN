@@ -13,40 +13,72 @@ using Newtonsoft.Json;
 
 namespace GUI
 {
-    public partial class MoTaiKhoan : Form
+    public partial class SuaTTKH : Form
     {
-        public MoTaiKhoan()
+        public QLyKHDTO khachHang;
+        public DataGridView dataGridView;
+
+        public SuaTTKH()
         {
             InitializeComponent();
+            khachHang = new QLyKHDTO();
         }
-        private void MoTaiKhoan_Load(object sender, EventArgs e)
+
+        private void SuaTTKH_Load(object sender, EventArgs e)
         {
-            dateNgayMoTK.Text = DateTime.Now.Date.ToShortDateString();
             lblError.ForeColor = Color.Red;
-            // Lấy ds mã rổ
-            QLyKHBUS khachHangBUS = new QLyKHBUS();
-            string jsonData = khachHangBUS.layDSRo();
+
+            txtSoTKLK.Text = khachHang.STKLK;
+            txtHoTen.Text = khachHang.hoTenKH;
+            dateNgayCap.Value = khachHang.NgayCap;
+            txtDiaChi.Text = khachHang.diaChiKH;
+            txtSDT.Text = khachHang.SDTKH;
+            txtNgayMoTK.Text = khachHang.ngayMoTKKH.ToString();
+            datengaySinh.Value = khachHang.ngaySinhKH;
+            txtSoCMND.Text = khachHang.soCMNNKH;
+            txtNoiCap.Text = khachHang.NoiCap;
+            txtEmail.Text = khachHang.emailKH;
+            txtHanMucVay.Text = khachHang.HanMucVay.ToString();
+            if(khachHang.gioiTinhKH == "Nữ")
+            {
+                cmbGioiTinh.SelectedIndex = 1;
+            }
+            if (khachHang.gioiTinhKH == "Nam")
+            {
+                cmbGioiTinh.SelectedIndex = 0;
+            }
+
+            // Lấy danh sách mã rổ
+            QLyKHBUS qLyKHBUS = new QLyKHBUS();
+            RoCK roCK = new RoCK();
+            string jsonData = qLyKHBUS.layDSRo();
             List<RoCK> list = JsonConvert.DeserializeObject<List<RoCK>>(jsonData);
-            // Hiển thị lên cmb
+            // Hiển thị danh sách Mã rổ lên combobox
             cmbMaRo.Refresh();
             cmbMaRo.DataSource = list;
             cmbMaRo.DisplayMember = "MaRo";
-            cmbMaRo.SelectedIndex = 0;
-            cmbGioiTinh.SelectedIndex = 0;
+            int i = 0;
+            foreach (var temp in list)
+            {
+                if (temp.MaRo == khachHang.MaRo)
+                {
+                    cmbMaRo.SelectedIndex = i;
+                }
+                else
+                {
+                    i++;
+                }
+            }
         }
 
         private void btnMoTK_Click(object sender, EventArgs e)
         {
             try
             {
+                //Kiểm tra lỗi nhập
                 QLyKHBUS khachHangBUS = new QLyKHBUS();
-                switch (khachHangBUS.KTThongTinThemKH(txtSoTKLK.Text, DateTime.Now, txtHoTen.Text, datengaySinh.Value, txtNoiCap.Text, txtSoCMND.Text, txtDiaChi.Text, txtHanMucVay.Text, txtSDT.Text))
+                switch (khachHangBUS.KTThongTinSuaKH(txtSoTKLK.Text, DateTime.Now, txtHoTen.Text, datengaySinh.Value, txtNoiCap.Text, txtSoCMND.Text, txtDiaChi.Text, txtHanMucVay.Text, txtSDT.Text))
                 {
-                    case 1:
-                        {
-                            lblError.Text = "Bạn chưa nhập số TKLK";
-                            break;
-                        }
                     case 2:
                         {
                             lblError.Text = "Bạn chưa nhập họ tên";
@@ -102,54 +134,38 @@ namespace GUI
                             lblError.Text = "Số điện thoại không hợp lệ";
                             break;
                         }
-                    case 13:
-                        {
-                            lblError.Text = "Số TKLK đã tồn tại";
-                            break;
-                        }
-                    case 14:
-                        {
-                            lblError.Text = "Số TKLK không hợp lệ";
-                            break;
-                        }
-                    case 15:
-                        {
-                            lblError.Text = "Số CMND đã tồn tại";
-                            break;
-                        }
                     case 0:
                         {
                             lblError.Text = "";
                             QLyKHDTO khachHang = new QLyKHDTO();
                             RoCK ro = (RoCK)cmbMaRo.SelectedItem;
 
-                            khachHang.STKLK = txtSoTKLK.Text;
-                            khachHang.hoTenKH = txtHoTen.Text;
-                            khachHang.ngaySinhKH = datengaySinh.Value;
-                            khachHang.ngayMoTKKH = DateTime.Now;
-                            khachHang.HanMucVay = int.Parse(txtHanMucVay.Text);
-                            khachHang.soCMNNKH = txtSoCMND.Text;
-                            khachHang.emailKH = txtEmail.Text;
-                            khachHang.NgayCap = dateNgayCap.Value;
-                            khachHang.NoiCap = txtNoiCap.Text;
-                            khachHang.gioiTinhKH = cmbGioiTinh.SelectedItem.ToString();
-                            khachHang.MaRo = ro.MaRo;
-                            khachHang.diaChiKH = txtDiaChi.Text;
-                            khachHang.SDTKH = txtSDT.Text;
-                            khachHang.SoTienMat = 0;
-                            khachHang.SoDuNo = 0;
-
-                            MessageBox.Show(khachHang.MaRo);
-
                             string jsonDataAdd = JsonConvert.SerializeObject(khachHang);
-                            if (khachHangBUS.ThemKH(jsonDataAdd))
+                            if (khachHangBUS.suaThongTinKH(txtSoTKLK.Text, txtHoTen.Text, datengaySinh.Value, txtNoiCap.Text, txtSoCMND.Text, 
+                                dateNgayCap.Value, txtEmail.Text, cmbGioiTinh.SelectedItem.ToString(), int.Parse(txtHanMucVay.Text), txtDiaChi.Text, txtSDT.Text, ro.MaRo))
                             {
-                                MessageBox.Show("Thêm khách hàng mới thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                // Hiển thị lại dữ liệu lên grid view
+                                /*foreach (DataGridViewRow temp in dataGridView.Rows)
+                                {
+                                    if (temp.Cells[0].Value.ToString() == txtSoTKLK.Text)
+                                    {
+                                        temp.Cells[1].Value = txtHoTen.Text;
+                                        temp.Cells[2].Value = datengaySinh.Value;
+                                        temp.Cells[3].Value = txtSoCMND.Text;
+                                        temp.Cells[4].Value = dateNgayCap.Value;
+                                        temp.Cells[5].Value = txtNoiCap.Text;
+                                        temp.Cells[6].Value = cmbGioiTinh.SelectedItem.ToString();
+                                        temp.Cells[7].Value = txtDiaChi.Text;
+                                        temp.Cells[8].Value = khachHang.ngayMoTKKH;
+                                        temp.Cells[9].Value = txtSDT.Text;
+                                    }
+                                }*/
+                                MessageBox.Show("Sửa khách hàng thành công", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 Close();
                             }
                             else
                             {
-                                MessageBox.Show("Đã có lỗi sảy ra, thêm khách hàng mới thất bại", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Đã có lỗi sảy ra, sửa khách hàng thất bại", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                             break;
                         }

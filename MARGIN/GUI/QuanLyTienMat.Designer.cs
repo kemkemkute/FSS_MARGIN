@@ -28,183 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtTienMat = new System.Windows.Forms.TextBox();
+            this.txtDuNo = new System.Windows.Forms.TextBox();
+            this.txtSoCMND = new System.Windows.Forms.TextBox();
+            this.txtSoTKLK = new System.Windows.Forms.TextBox();
+            this.lblDuNo = new System.Windows.Forms.Label();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblHoTen = new System.Windows.Forms.Label();
+            this.lblTienMat = new System.Windows.Forms.Label();
+            this.lblSoCMND = new System.Windows.Forms.Label();
+            this.lblSoTKLK = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
+            this.btbNop = new System.Windows.Forms.Button();
+            this.btnRut = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox13
+            // txtTienMat
             // 
-            this.textBox13.Location = new System.Drawing.Point(129, 102);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(130, 20);
-            this.textBox13.TabIndex = 38;
+            this.txtTienMat.Location = new System.Drawing.Point(129, 102);
+            this.txtTienMat.Name = "txtTienMat";
+            this.txtTienMat.Size = new System.Drawing.Size(130, 20);
+            this.txtTienMat.TabIndex = 5;
             // 
-            // textBox5
+            // txtDuNo
             // 
-            this.textBox5.Location = new System.Drawing.Point(421, 102);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 20);
-            this.textBox5.TabIndex = 37;
+            this.txtDuNo.Location = new System.Drawing.Point(421, 102);
+            this.txtDuNo.Name = "txtDuNo";
+            this.txtDuNo.Size = new System.Drawing.Size(127, 20);
+            this.txtDuNo.TabIndex = 6;
             // 
-            // textBox3
+            // txtSoCMND
             // 
-            this.textBox3.Location = new System.Drawing.Point(129, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 36;
+            this.txtSoCMND.Location = new System.Drawing.Point(129, 67);
+            this.txtSoCMND.Name = "txtSoCMND";
+            this.txtSoCMND.Size = new System.Drawing.Size(130, 20);
+            this.txtSoCMND.TabIndex = 3;
             // 
-            // textBox1
+            // txtSoTKLK
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
-            this.textBox1.TabIndex = 35;
+            this.txtSoTKLK.Location = new System.Drawing.Point(129, 36);
+            this.txtSoTKLK.Name = "txtSoTKLK";
+            this.txtSoTKLK.Size = new System.Drawing.Size(130, 20);
+            this.txtSoTKLK.TabIndex = 1;
+            this.txtSoTKLK.Leave += new System.EventHandler(this.txtSoTKLK_Leave_1);
             // 
-            // label13
+            // lblDuNo
             // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(324, 105);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 13);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "Dư nợ";
+            this.lblDuNo.AutoSize = true;
+            this.lblDuNo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDuNo.Location = new System.Drawing.Point(324, 105);
+            this.lblDuNo.Name = "lblDuNo";
+            this.lblDuNo.Size = new System.Drawing.Size(36, 13);
+            this.lblDuNo.TabIndex = 34;
+            this.lblDuNo.Text = "Dư nợ";
             // 
-            // label12
+            // lblSDT
             // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(324, 70);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 13);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Số điện thoại";
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSDT.Location = new System.Drawing.Point(324, 70);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(70, 13);
+            this.lblSDT.TabIndex = 33;
+            this.lblSDT.Text = "Số điện thoại";
             // 
-            // label10
+            // lblHoTen
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(324, 39);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "Họ và tên";
+            this.lblHoTen.AutoSize = true;
+            this.lblHoTen.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblHoTen.Location = new System.Drawing.Point(324, 39);
+            this.lblHoTen.Name = "lblHoTen";
+            this.lblHoTen.Size = new System.Drawing.Size(54, 13);
+            this.lblHoTen.TabIndex = 32;
+            this.lblHoTen.Text = "Họ và tên";
             // 
-            // label3
+            // lblTienMat
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(28, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Tiền mặt";
+            this.lblTienMat.AutoSize = true;
+            this.lblTienMat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTienMat.Location = new System.Drawing.Point(28, 105);
+            this.lblTienMat.Name = "lblTienMat";
+            this.lblTienMat.Size = new System.Drawing.Size(48, 13);
+            this.lblTienMat.TabIndex = 31;
+            this.lblTienMat.Text = "Tiền mặt";
             // 
-            // label2
+            // lblSoCMND
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(28, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Số CMND";
+            this.lblSoCMND.AutoSize = true;
+            this.lblSoCMND.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSoCMND.Location = new System.Drawing.Point(28, 70);
+            this.lblSoCMND.Name = "lblSoCMND";
+            this.lblSoCMND.Size = new System.Drawing.Size(55, 13);
+            this.lblSoCMND.TabIndex = 30;
+            this.lblSoCMND.Text = "Số CMND";
             // 
-            // label1
+            // lblSoTKLK
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(28, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Số TK lưu ký";
+            this.lblSoTKLK.AutoSize = true;
+            this.lblSoTKLK.ForeColor = System.Drawing.Color.Red;
+            this.lblSoTKLK.Location = new System.Drawing.Point(28, 39);
+            this.lblSoTKLK.Name = "lblSoTKLK";
+            this.lblSoTKLK.Size = new System.Drawing.Size(68, 13);
+            this.lblSoTKLK.TabIndex = 29;
+            this.lblSoTKLK.Text = "Số TK lưu ký";
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Location = new System.Drawing.Point(421, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 20);
-            this.textBox2.TabIndex = 41;
+            this.txtSDT.Location = new System.Drawing.Point(421, 67);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(127, 20);
+            this.txtSDT.TabIndex = 4;
             // 
-            // textBox4
+            // txtHoTen
             // 
-            this.textBox4.Location = new System.Drawing.Point(421, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 20);
-            this.textBox4.TabIndex = 42;
+            this.txtHoTen.Location = new System.Drawing.Point(421, 36);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(127, 20);
+            this.txtHoTen.TabIndex = 2;
             // 
-            // label4
+            // lblError
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(324, 144);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 13);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Dòng màu đỏ là thông tin bắt buộc";
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(324, 144);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 43;
             // 
-            // button1
+            // btbNop
             // 
-            this.button1.Location = new System.Drawing.Point(115, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Nộp";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btbNop.Enabled = false;
+            this.btbNop.Location = new System.Drawing.Point(115, 182);
+            this.btbNop.Name = "btbNop";
+            this.btbNop.Size = new System.Drawing.Size(75, 23);
+            this.btbNop.TabIndex = 7;
+            this.btbNop.Text = "Nộp";
+            this.btbNop.UseVisualStyleBackColor = true;
+            this.btbNop.Click += new System.EventHandler(this.btbNop_Click);
             // 
-            // button2
+            // btnRut
             // 
-            this.button2.Location = new System.Drawing.Point(245, 182);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Rút";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRut.Enabled = false;
+            this.btnRut.Location = new System.Drawing.Point(245, 182);
+            this.btnRut.Name = "btnRut";
+            this.btnRut.Size = new System.Drawing.Size(75, 23);
+            this.btnRut.TabIndex = 8;
+            this.btnRut.Text = "Rút";
+            this.btnRut.UseVisualStyleBackColor = true;
+            this.btnRut.Click += new System.EventHandler(this.btnRut_Click);
             // 
-            // button3
+            // btnThoat
             // 
-            this.button3.Location = new System.Drawing.Point(385, 182);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "Thoát";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnThoat.Location = new System.Drawing.Point(385, 182);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // QuanLyTienMat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 224);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnRut);
+            this.Controls.Add(this.btbNop);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.txtHoTen);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.txtTienMat);
+            this.Controls.Add(this.txtDuNo);
+            this.Controls.Add(this.txtSoCMND);
+            this.Controls.Add(this.txtSoTKLK);
+            this.Controls.Add(this.lblDuNo);
+            this.Controls.Add(this.lblSDT);
+            this.Controls.Add(this.lblHoTen);
+            this.Controls.Add(this.lblTienMat);
+            this.Controls.Add(this.lblSoCMND);
+            this.Controls.Add(this.lblSoTKLK);
             this.Name = "QuanLyTienMat";
             this.Text = "Quản lý tiền mặt";
             this.ResumeLayout(false);
@@ -213,21 +218,21 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtTienMat;
+        private System.Windows.Forms.TextBox txtDuNo;
+        private System.Windows.Forms.TextBox txtSoCMND;
+        private System.Windows.Forms.TextBox txtSoTKLK;
+        private System.Windows.Forms.Label lblDuNo;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblHoTen;
+        private System.Windows.Forms.Label lblTienMat;
+        private System.Windows.Forms.Label lblSoCMND;
+        private System.Windows.Forms.Label lblSoTKLK;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btbNop;
+        private System.Windows.Forms.Button btnRut;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
